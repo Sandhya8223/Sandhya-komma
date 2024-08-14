@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Delivery Application</h1>
+        
+        <div class="grocery-list">
+            <h2>Available Groceries</h2>
+            <div class="item">
+                <input type="checkbox" id="item1" data-name="Apples" data-price="3.00">
+                <label for="item1">Apples - $3.00</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="item2" data-name="Bananas" data-price="1.50">
+                <label for="item2">Bananas - $1.50</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="item3" data-name="Carrots" data-price="2.00">
+                <label for="item3">Carrots - $2.00</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="item4" data-name="Milk" data-price="2.50">
+                <label for="item4">Milk - $2.50</label>
+            </div>
+        </div>
+
+        <button onclick="addToCart()">Add to Cart</button>
+        
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
